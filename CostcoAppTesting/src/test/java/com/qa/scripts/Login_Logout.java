@@ -9,6 +9,7 @@ public class Login_Logout extends StartBrowser {
   @Test
   public void testLogin_Logout() throws Exception {
 	  BusinessFunctions fn = new BusinessFunctions();
+	  fn.navigateToCostco();
 	  fn.login();
   }
 }

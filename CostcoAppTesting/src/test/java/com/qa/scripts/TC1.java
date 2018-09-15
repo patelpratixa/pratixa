@@ -7,7 +7,7 @@ import com.qa.wdcmds.ActionDriver;
 
 public class TC1 extends StartBrowser {
   @Test
-  public void testTC1() 
+  public void testTC1() throws Exception 
   {
 	  ActionDriver aDriver = new ActionDriver();
 	  aDriver.launchApplication("https://www.costco.com/");
