@@ -11,5 +11,6 @@ public class Login_Logout extends StartBrowser {
 	  BusinessFunctions fn = new BusinessFunctions();
 	  fn.navigateToCostco();
 	  fn.login();
+	  System.out.println("This is Login_Logout Test");
   }
 }
