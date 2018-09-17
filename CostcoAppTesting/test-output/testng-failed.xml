@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.scripts.FindAwareHouse_Test">
+      <class name="com.qa.scripts.Grocery_Test">
         <methods>
           <include name="afterClass"/>
+          <include name="testGrocery_Test"/>
           <include name="report"/>
-          <include name="testFindAwareHouse_Test"/>
           <include name="beforeClass"/>
           <include name="method"/>
         </methods>
-      </class> <!-- com.qa.scripts.FindAwareHouse_Test -->
+      </class> <!-- com.qa.scripts.Grocery_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

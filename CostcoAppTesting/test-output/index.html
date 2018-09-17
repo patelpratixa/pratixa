@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Pratixa\AppData\Local\Temp\testng-eclipse--617675927\testng-customsuite.xml</span>
+                    <span>C:\Users\Pratixa\AppData\Local\Temp\testng-eclipse-1680725524\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.scripts.FindAwareHouse_Test" hash-for-method="testFindAwareHouse_Test">testFindAwareHouse_Test</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.qa.scripts.Grocery_Test" hash-for-method="testGrocery_Test">testGrocery_Test</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,18 +120,35 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.qa.scripts.FindAwareHouse_Test</span>
+              <span class="class-name">com.qa.scripts.Grocery_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testFindAwareHouse_Test">
-                  </a> <!-- testFindAwareHouse_Test -->
-                  <span class="method-name">testFindAwareHouse_Test</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.qa.wdcmds.ActionDriver.launchApplication(ActionDriver.java:28)
-	at com.qa.reuse.BusinessFunctions.navigateToCostco(BusinessFunctions.java:31)
-	at com.qa.scripts.FindAwareHouse_Test.testFindAwareHouse_Test(FindAwareHouse_Test.java:12)
+                  <a name="testGrocery_Test">
+                  </a> <!-- testGrocery_Test -->
+                  <span class="method-name">testGrocery_Test</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;/CatalogSearch?dietary-features=organic&amp;keyword=Kirkland%20Signature&amp;refine=ads_f141501_ntk_cs%253A%2522Organic%2522|​&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;NITIN-PC&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 17224, moz:profile: C:\Users\Pratixa\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 9beba7ed-138a-41ef-ab74-6a28c1ced4d5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.qa.wdcmds.ActionDriver.click(ActionDriver.java:48)
+	at com.qa.reuse.BusinessFunctions.grocery(BusinessFunctions.java:90)
+	at com.qa.scripts.Grocery_Test.testGrocery_Test(Grocery_Test.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -166,7 +183,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Pratixa\AppData\Local\Temp\testng-eclipse--617675927\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Pratixa\AppData\Local\Temp\testng-eclipse-1680725524\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -175,7 +192,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qa.scripts.FindAwareHouse_Test&quot;/&gt;
+      &lt;class name=&quot;com.qa.scripts.Grocery_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -217,14 +234,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testFindAwareHouse_Test')
-data.setCell(0, 2, 'com.qa.scripts.FindAwareHouse_Test')
-data.setCell(0, 3, 11993);
+data.setCell(0, 1, 'testGrocery_Test')
+data.setCell(0, 2, 'com.qa.scripts.Grocery_Test')
+data.setCell(0, 3, 12400);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -250,28 +267,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.scripts.FindAwareHouse_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.scripts.Grocery_Test</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">report</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">496 ms</span>
+                <span class="method-start">309 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">method(public void com.qa.scripts.FindAwareHouse_Test.testFindAwareHouse_Test() throws java.lang.Exception)</span>
-                <span class="method-start">24601 ms</span>
+                <span class="method-name">method(public void com.qa.scripts.Grocery_Test.testGrocery_Test() throws java.lang.Exception)</span>
+                <span class="method-start">7110 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testFindAwareHouse_Test</span>
-                <span class="method-start">24615 ms</span>
+                <span class="method-name">testGrocery_Test</span>
+                <span class="method-start">7116 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">36642 ms</span>
+                <span class="method-start">19523 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

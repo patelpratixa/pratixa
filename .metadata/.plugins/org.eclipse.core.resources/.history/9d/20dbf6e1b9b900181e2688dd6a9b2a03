@@ -1,0 +1,12 @@
+package com.qa.scripts;
+
+import org.testng.annotations.Test;
+
+public class Register_Test {
+  @Test
+  public void testRegister_test() throws Exception {
+	  BusinessFunctions bf = new BusinessFunctions();
+	  bf.navigateToCostco();
+	  bf.register();
+  }
+}

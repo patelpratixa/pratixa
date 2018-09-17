@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 13 22:02:51 EDT 2018</td>
+<td>Started on:</td><td>Sun Sep 16 16:02:37 EDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>42 seconds (42120 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20213 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,28 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.scripts.FindAwareHouse_Test.testFindAwareHouse_Test()'><b>testFindAwareHouse_Test</b><br>Test class: com.qa.scripts.FindAwareHouse_Test</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.qa.wdcmds.ActionDriver.launchApplication(ActionDriver.java:28)
-	at com.qa.reuse.BusinessFunctions.navigateToCostco(BusinessFunctions.java:31)
-	at com.qa.scripts.FindAwareHouse_Test.testFindAwareHouse_Test(FindAwareHouse_Test.java:12)
+<td title='com.qa.scripts.Grocery_Test.testGrocery_Test()'><b>testGrocery_Test</b><br>Test class: com.qa.scripts.Grocery_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;/CatalogSearch?dietary-features=organic&amp;keyword=Kirkland%20Signature&amp;refine=ads_f141501_ntk_cs%253A%2522Organic%2522|?&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;NITIN-PC&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 17224, moz:profile: C:\Users\Pratixa\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 9beba7ed-138a-41ef-ab74-6a28c1ced4d5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.qa.wdcmds.ActionDriver.click(ActionDriver.java:48)
+	at com.qa.reuse.BusinessFunctions.grocery(BusinessFunctions.java:90)
+	at com.qa.scripts.Grocery_Test.testGrocery_Test(Grocery_Test.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -105,11 +122,28 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1312963234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1312963234'><pre>java.lang.NullPointerException
-	at com.qa.wdcmds.ActionDriver.launchApplication(ActionDriver.java:28)
-	at com.qa.reuse.BusinessFunctions.navigateToCostco(BusinessFunctions.java:31)
-	at com.qa.scripts.FindAwareHouse_Test.testFindAwareHouse_Test(FindAwareHouse_Test.java:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace941836856", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace941836856'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a href=&quot;/CatalogSearch?dietary-features=organic&amp;keyword=Kirkland%20Signature&amp;refine=ads_f141501_ntk_cs%253A%2522Organic%2522|?&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;NITIN-PC&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 17224, moz:profile: C:\Users\Pratixa\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 9beba7ed-138a-41ef-ab74-6a28c1ced4d5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.qa.wdcmds.ActionDriver.click(ActionDriver.java:48)
+	at com.qa.reuse.BusinessFunctions.grocery(BusinessFunctions.java:90)
+	at com.qa.scripts.Grocery_Test.testGrocery_Test(Grocery_Test.java:14)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -136,8 +170,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>11</td>
-<td>com.qa.scripts.FindAwareHouse_Test@1b26f7b2</td></tr>
+<td>12</td>
+<td>com.qa.scripts.Grocery_Test@1b26f7b2</td></tr>
 </table><p>
 </body>
 </html>

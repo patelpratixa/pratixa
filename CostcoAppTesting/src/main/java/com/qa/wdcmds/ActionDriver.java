@@ -3,6 +3,8 @@ package com.qa.wdcmds;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -29,7 +31,7 @@ public class ActionDriver {
 		driver.get(url);
 		StartBrowser.childTest.pass("Launched application successfully :"+url);
 		}catch(Exception e){
-			StartBrowser.childTest.fail("Unable to Launch application"+url,
+			StartBrowser.childTest.fail("Unable to Launch application"+url ,
             MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
             StartBrowser.childTest.info(e);
             throw e;
@@ -77,7 +79,7 @@ public class ActionDriver {
 	
 	private String screenShot() {
 		
-		return null;
+		return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
 	}
 	/**
 	  * used to perform mouse hover on element
@@ -90,7 +92,7 @@ public class ActionDriver {
 	  try {
 	   WebElement mo=driver.findElement(locator);
 	   Actions a = new Actions(driver);
-	   a.moveToElement(mo).perform();
+	   a.moveToElement(mo).build().perform();
 	   StartBrowser.childTest.pass("Performed mousehover action on :"+eleName);
 	  } catch (Exception e) {
 	   StartBrowser.childTest.fail("Unable to Perform mousehover action on :"+eleName, 

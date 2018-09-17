@@ -1,0 +1,9 @@
+package com.qa.scripts;
+
+import org.testng.annotations.Test;
+
+public class Grocery_Test {
+  @Test
+  public void f() {
+  }
+}

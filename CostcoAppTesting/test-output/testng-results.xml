@@ -2,37 +2,62 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42120" started-at="2018-09-14T02:02:51Z" finished-at="2018-09-14T02:03:33Z">
+  <suite name="Default suite" duration-ms="20213" started-at="2018-09-16T20:02:37Z" finished-at="2018-09-16T20:02:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42120" started-at="2018-09-14T02:02:51Z" finished-at="2018-09-14T02:03:33Z">
-      <class name="com.qa.scripts.FindAwareHouse_Test">
-        <test-method status="PASS" signature="report()[pri:0, instance:com.qa.scripts.FindAwareHouse_Test@1b26f7b2]" name="report" is-config="true" duration-ms="479" started-at="2018-09-14T02:02:51Z" finished-at="2018-09-14T02:02:52Z">
+    <test name="Default test" duration-ms="20213" started-at="2018-09-16T20:02:37Z" finished-at="2018-09-16T20:02:57Z">
+      <class name="com.qa.scripts.Grocery_Test">
+        <test-method status="PASS" signature="report()[pri:0, instance:com.qa.scripts.Grocery_Test@1b26f7b2]" name="report" is-config="true" duration-ms="299" started-at="2018-09-16T20:02:37Z" finished-at="2018-09-16T20:02:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.qa.scripts.FindAwareHouse_Test@1b26f7b2]" name="beforeClass" is-config="true" duration-ms="24080" started-at="2018-09-14T02:02:52Z" finished-at="2018-09-14T02:03:16Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.qa.scripts.Grocery_Test@1b26f7b2]" name="beforeClass" is-config="true" duration-ms="6783" started-at="2018-09-16T20:02:37Z" finished-at="2018-09-16T20:02:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="method(java.lang.reflect.Method)[pri:0, instance:com.qa.scripts.FindAwareHouse_Test@1b26f7b2]" name="method" is-config="true" duration-ms="14" started-at="2018-09-14T02:03:16Z" finished-at="2018-09-14T02:03:16Z">
+        <test-method status="PASS" signature="method(java.lang.reflect.Method)[pri:0, instance:com.qa.scripts.Grocery_Test@1b26f7b2]" name="method" is-config="true" duration-ms="6" started-at="2018-09-16T20:02:44Z" finished-at="2018-09-16T20:02:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.qa.scripts.FindAwareHouse_Test.testFindAwareHouse_Test() throws java.lang.Exception]]>
+                <![CDATA[public void com.qa.scripts.Grocery_Test.testGrocery_Test() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- method -->
-        <test-method status="FAIL" signature="testFindAwareHouse_Test()[pri:0, instance:com.qa.scripts.FindAwareHouse_Test@1b26f7b2]" name="testFindAwareHouse_Test" duration-ms="11993" started-at="2018-09-14T02:03:16Z" finished-at="2018-09-14T02:03:28Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="FAIL" signature="testGrocery_Test()[pri:0, instance:com.qa.scripts.Grocery_Test@1b26f7b2]" name="testGrocery_Test" duration-ms="12400" started-at="2018-09-16T20:02:44Z" finished-at="2018-09-16T20:02:57Z">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a href="/CatalogSearch?dietary-features=organic&keyword=Kirkland%20Signature&refine=ads_f141501_ntk_cs%253A%2522Organic%2522|​"> could not be scrolled into view
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'NITIN-PC', ip: '192.168.1.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 17224, moz:profile: C:\Users\Pratixa\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 9beba7ed-138a-41ef-ab74-6a28c1ced4d5]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.qa.wdcmds.ActionDriver.launchApplication(ActionDriver.java:28)
-at com.qa.reuse.BusinessFunctions.navigateToCostco(BusinessFunctions.java:31)
-at com.qa.scripts.FindAwareHouse_Test.testFindAwareHouse_Test(FindAwareHouse_Test.java:12)
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="/CatalogSearch?dietary-features=organic&keyword=Kirkland%20Signature&refine=ads_f141501_ntk_cs%253A%2522Organic%2522|​"> could not be scrolled into view
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'NITIN-PC', ip: '192.168.1.5', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 17224, moz:profile: C:\Users\Pratixa\AppData\Lo..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 9beba7ed-138a-41ef-ab74-6a28c1ced4d5
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at com.qa.wdcmds.ActionDriver.click(ActionDriver.java:48)
+at com.qa.reuse.BusinessFunctions.grocery(BusinessFunctions.java:90)
+at com.qa.scripts.Grocery_Test.testGrocery_Test(Grocery_Test.java:14)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -60,15 +85,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFindAwareHouse_Test -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.qa.scripts.FindAwareHouse_Test@1b26f7b2]" name="afterClass" is-config="true" duration-ms="5469" started-at="2018-09-14T02:03:28Z" finished-at="2018-09-14T02:03:33Z">
+        </test-method> <!-- testGrocery_Test -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.qa.scripts.Grocery_Test@1b26f7b2]" name="afterClass" is-config="true" duration-ms="684" started-at="2018-09-16T20:02:57Z" finished-at="2018-09-16T20:02:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.qa.scripts.FindAwareHouse_Test -->
+      </class> <!-- com.qa.scripts.Grocery_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

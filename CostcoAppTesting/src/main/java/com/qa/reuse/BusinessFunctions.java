@@ -3,8 +3,11 @@ package com.qa.reuse;
 import org.openqa.selenium.WebDriver;
 
 import com.qa.config.StartBrowser;
+import com.qa.or.Grocery;
 import com.qa.or.HomePage;
 import com.qa.or.LoginPage;
+import com.qa.or.MyAccountPage;
+import com.qa.or.RegisterPage;
 import com.qa.wdcmds.ActionDriver;
 
 public class BusinessFunctions {
@@ -28,10 +31,12 @@ public class BusinessFunctions {
 	}
 
 	public void navigateToCostco() throws Exception {
+		StartBrowser.childTest = StartBrowser.parentTest.createNode("navigate to application");
 		aDriver.launchApplication("https://www.costco.com/");
 	}
 
 	public void findAwareHouse() throws Exception {
+		StartBrowser.childTest = StartBrowser.parentTest.createNode("Find warehouse");
 		aDriver.mouseHover(HomePage.lnkWareHouse, "lnkWareHouse ");
 		aDriver.type(HomePage.txtZip, "03062", "zipcode");
 		Thread.sleep(1000);
@@ -40,6 +45,7 @@ public class BusinessFunctions {
 	}
 
 	public void getEmailOffers() throws Exception {
+		StartBrowser.childTest = StartBrowser.parentTest.createNode("Get Email Offers");
 		aDriver.mouseHover(HomePage.lnkGetEmailOffers, "lnkGetEmailOffers");
 		aDriver.type(HomePage.txtEmail, "pratixabenp@gmail.com", "txtEmail");
 		aDriver.click(HomePage.btnGo, "Button");
@@ -47,7 +53,41 @@ public class BusinessFunctions {
 	}
 
 	public void us() throws Exception {
+		StartBrowser.childTest = StartBrowser.parentTest.createNode("US");
 		aDriver.mouseHover(HomePage.lnkUS, "US");
+	}
+	
+	public void register() throws Exception {
+		
+		StartBrowser.childTest = StartBrowser.parentTest.createNode("Create Account");
+		aDriver.click(HomePage.lnkSignIn, "SignIn button");
+		aDriver.click(LoginPage.btnCreateAccount, "Create Account");
+		aDriver.type(RegisterPage.txtEmail, "dnr5dnr@gmail.com", "Email");
+		aDriver.type(RegisterPage.txtPassword, "selenium123", "Password");
+		aDriver.type(RegisterPage.txtVerifyPassword, "selenium123", "Confirm Password");
+		aDriver.type(RegisterPage.txtMembershipNumber, "12345678", "Membership Number");
+		aDriver.type(RegisterPage.txtLastNameOnMembership, "Patel", "Last Name on Membership Number");
+		aDriver.click(RegisterPage.btnCreateAccount, "Create Account");
+
+	}
+	
+	public void myAccount() throws Exception
+	{
+		StartBrowser.childTest = StartBrowser.parentTest.createNode("My Account");
+		aDriver.mouseHover(MyAccountPage.lnkMyAccount, "My Account");
+		
+	}
+	public void grocery() throws Exception
+	{
+		StartBrowser.childTest = StartBrowser.parentTest.createNode("Grocery");
+		aDriver.mouseHover(Grocery.lnkGrocery, "Grocery");
+		Thread.sleep(20);
+		aDriver.click(Grocery.lnkKirklandSignature, "Kirkland Signature");
+		
+		
+		aDriver.mouseHover(Grocery.lnkGrocery, "Grocery");
+		Thread.sleep(20);
+		aDriver.click(Grocery.lnkOrganic, "Organic");
 	}
 
 }

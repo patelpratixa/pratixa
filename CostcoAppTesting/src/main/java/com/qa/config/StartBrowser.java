@@ -52,7 +52,7 @@ public class StartBrowser {
 
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		//driver.quit();
 		extent.flush();
 
 	}
